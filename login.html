@@ -11,13 +11,23 @@
         <li><a href = "1.html">Go to the first page</a></li>
         <li><a href = "2.html">Go to the second page</a></li>
         <li><a href="table.html">Go to the table page</a></li>
-        <li><a href="login.html">Go to the login page</a></li>
+        <li><a href="dropdownlist.html">Go to the dropdownlist page</a></li>
+        <li><a href="fileupload.html">Go to the fileupload page</a></li>
+
    </ul>
    <form action="https://localhost/login.php"> <!--로그인 버튼을 누르면 action에 적혀있는 주소로 정보를보낸다-->
         <p>id : <input type="text" name="id"></p>
         <p>password : <input type="password" name="password"></p>
         <p>address : <input type="text" name="address"></p>
         <p><input type = "submit"></p>
+    </form>
+    <form action="https://localhost/login.php" method="post"> <!--get방식은 url에 정보가드러나지만 post방식은 url에 정보가 드러나지않는다-->
+        <p><label for="id_txt">id : </label><input id="id_txt" type="text" name="id" value="ID"></p>
+        <p><label for="password">password : </label><input id="password" type="password" name="password" value="password"></p>
+        <p>textarea : <textarea name="textarea" cols="30" rows="10">Default value</textarea>></p>
+        <p><input type="submit" value="submit"></p>
+        <p><label><input type="checkbox" name="color">Red</label></p>
+        <p><label><input type="checkbox" name="color">Blue</label></p>
     </form>
 </body>
 </html>
