@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning html</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--모바일로 볼때 환경설정-->
+    <meta name="title" content="이 문서의 제목은 input입니다.">
+    <meta name="description" content="html의 인풋기능에 대해 공부한페이지입니다.">
+    <meta name="keyword" content="html,coding,코딩">
+</head>
+<body>
+    <h2><a href = "index.html">Main page</a></h2>
+    <ul>
+        <li><a href = "1.html">Go to the first page</a></li>
+        <li><a href = "2.html">Go to the second page</a></li>
+        <li><a href="table.html">Go to the table page</a></li>
+        <li><a href="login.html">Go to the login page</a></li>
+        <li><a href="dropdownlist.html">Go to the dropdownlist page</a></li>
+        <li><a href="fileupload.html">Go to the fileupload page</a></li>
+        <li><a href="iframe.html">Go to the iframe page</a></li>
+    </ul>
+
+    <form>
+        <p><input type="number" name="age" min="10" max="15" placeholder="number"></p>
+        <p><input type="date" name="datev"></p>
+        <p><input type="email" name="emailv" placeholder="email"></p> <!--모바일로 열었을때 클릭하면 자판에 @가 있다-->
+        <p><input type="search" name="searchv" placeholder="search" autofocus></p> <!--모바일로 열었을때 클릭하면 자판에 .com이 있다-->
+        <p><input type="range" name="rangev" min="0" max="10" step="1"></p>
+        <p><input type="hidden" name="hiddenv"></p> <!--서버에 몰래 데이터를 보낼떄 사용-->
+        <p><input type="image" name="imagev" src="image/taxi-cab-381233_1920.jpg" width="100px"></p>
+        <p><input type="submit" value="submit"></p>
+
+    </form>
+
+</body>
+</html>

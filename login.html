@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
     <title>Learning html</title>
     <meta charset = "utf-8">
-<head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="이 문서의 제목은 login입니다.">
+    <meta name="description" content="html의 로그인기능에 대해 공부한페이지입니다.">
+    <meta name="keyword" content="html,coding,코딩">
 </head>
 <body>
     <h2><a href = "index.html">Main page</a></h2>
@@ -13,18 +16,20 @@
         <li><a href="table.html">Go to the table page</a></li>
         <li><a href="dropdownlist.html">Go to the dropdownlist page</a></li>
         <li><a href="fileupload.html">Go to the fileupload page</a></li>
+        <li><a href="iframe.html">Go to the iframe page</a></li>
+        <li><a href="input.html">Go to the input page</a></li>
 
    </ul>
-   <form action="https://localhost/login.php"> <!--로그인 버튼을 누르면 action에 적혀있는 주소로 정보를보낸다-->
-        <p>id : <input type="text" name="id"></p>
-        <p>password : <input type="password" name="password"></p>
-        <p>address : <input type="text" name="address"></p>
+   <form action="https://localhost/login.php" autocomplete="on"> <!--로그인 버튼을 누르면 action에 적혀있는 주소로 정보를보낸다-->
+        <p>id : <input type="text" name="id"  placeholder="id"  pattern="[a-zA-Z]{6,10}" required autofocus></p> <!--6자 이상 10자 이하-->
+        <p>password : <input type="password" name="password" placeholder="password" required pattern=".{6,}" autocomplete="off"></p>
+        <p>address : <input type="text" name="address" placeholder="address" required></p>
         <p><input type = "submit"></p>
     </form>
     <form action="https://localhost/login.php" method="post"> <!--get방식은 url에 정보가드러나지만 post방식은 url에 정보가 드러나지않는다-->
         <p><label for="id_txt">id : </label><input id="id_txt" type="text" name="id" value="ID"></p>
         <p><label for="password">password : </label><input id="password" type="password" name="password" value="password"></p>
-        <p>textarea : <textarea name="textarea" cols="30" rows="10">Default value</textarea>></p>
+        <p>textarea : <textarea name="textarea" cols="30" rows="10" placeholder="Textarea"></textarea></p>
         <p><input type="submit" value="submit"></p>
         <p><label><input type="checkbox" name="color">Red</label></p>
         <p><label><input type="checkbox" name="color">Blue</label></p>
