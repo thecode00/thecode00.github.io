@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning html</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--모바일로 볼때 환경설정-->
+    <meta name="title" content="이 문서의 제목은 boxmodel입니다.">
+    <meta name="description" content="css의 박스모델기능에 대해 공부한페이지입니다.">
+    <meta name="keyword" content="html,coding,코딩">
+    <style>
+        div{
+                width: 150px;
+                padding: 10px;
+                margin: 10px;
+                box-sizing: border-box;
+        }
+        h1,#inline,#newblock{
+            border:10px solid aqua;
+        }
+        #newin{
+            display: inline;
+        }
+        #newblock{
+            display: block;
+        }
+        #small{
+            border: 10px solid yellowgreen;
+        }
+        #large{
+            border: 30px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2><a href = "index.html">Main page</a></h2>
+    <ul>
+        <li><a href = "1.html">Go to the first page</a></li>
+        <li><a href = "2.html">Go to the second page</a></li>
+        <li><a href="table.html">Go to the table page</a></li>
+        <li><a href="login.html">Go to the login page</a></li>
+        <li><a href="dropdownlist.html">Go to the dropdownlist page</a></li>
+        <li><a href="fileupload.html">Go to the fileupload page</a></li>
+        <li><a href="iframe.html">Go to the iframe page</a></li>
+        <li><a href="input.html">Go to the input page</a></li>
+        <li><a href="cascading.html">Go to the cascading page</a></li>
+        <li><a href="position.html">Go to the position page</a></li>
+    </ul>
+    <h1>This is block level</h1>
+    <p>This is <a id="inline">in-line</a> level</p>
+    <br>
+    <h1 id="newin">Now this is in-line level</h1>
+    <p>This is <a id="inline">in-line</a> level</p>
+    <br>
+    <h1>This is block level</h1>
+    <p>This is <a id="newblock">new block</a> level</p>
+
+    <h2>box model</h2> <!--같은 width를 가지고 있지만 border크기때문에 크기가 다르다-->
+    <div id="small">Box</div> <!--그럴때 box-sizing을 사용하면 같은크기가 된다-->
+    <div id="large">Box</div>
+</body>
+</html>

@@ -9,18 +9,67 @@
     <meta name="description" content="html의 인덱스기능에 대해 공부한페이지입니다.">
     <meta name="keyword" content="html,coding,코딩">
     <style>
-        #change{
+        #rotate{
+            background-color: deepskyblue;
+            color: azure;
+            display: inline-block;
+            padding: 5px;
+            font-size: 5rem;
+            margin: 100px;
+
+        }
+        #skew{
+            background-color: deepskyblue;
+            color: azure;
+            display: inline-block;
+            padding: 5px;
+            font-size: 5rem;
+            margin: 100px;
+
+
+        }
+        #scale{
+            background-color: deepskyblue;
+            color: azure;
+            display: inline-block;
+            padding: 5px;
+            font-size: 5rem;
+            margin: 100px;
+
+        }
+        #translate{
+            background-color: deepskyblue;
+            color: azure;
+            display: inline-block;
+            padding: 5px;
+            font-size: 5rem;
+            margin: 100px;
+
+        }
+        #rotate:hover{
+            transform: rotateX(40deg);
             transition: all 1s;
+
+        }
+        #skew:hover{
+            transform: skew(45deg, 45deg);
+            transition: all 1s;
+
+        }
+        #scale:hover{
+            transform: scale(2);
+            transition: all 1s;
+
+        }
+        #translate:hover{
+            transform: translate(45px, 45px);
+            transition: all 1s;
+
         }
     </style>
 </head>
 
 <body>
-    <h1>Site</h1>
-    <ol>
-        <li><a href = "https://www.google.com/" target = "_blank" title = "Go to google">Google</a></li>
-        <li><a href = "https://www.naver.com" target = "_blank" title = "Go to naver">Naver</a></li>
-    </ol>
     <h2><a href = "index.html">Main page</a></h2>
     <ul>
         <li><a href = "1.html">Go to the first page</a></li>
@@ -40,23 +89,11 @@
         <li><a href="float.html">Go to the float page</a></li>
         <li><a href="multicolumn.html">Go to the multicolumn page</a></li>
         <li><a href="filter.html">Go to the filter page</a></li>
-        <li><a href="blender.html">Go to the blender page</a></li>
-        <li><a href="transform.html">Go to the transform page</a></li>
-        <li><a href="javascript.html">Go to the javascript page</a></li>
     </ul>
-    <input type="button" id="change" value="Night" onclick="
-    var target = document.querySelector('body')
-    if(this.value === 'Night'){
-    target.style.backgroundColor = 'gray';
-    target.style.color = 'white';
-    this.value = 'Day'
-    }
-    else{
-    target.style.backgroundColor = 'aliceblue';
-    target.style.color = 'black';
-    this.value = 'Night'
-    }
-    ">
+    <h1 id="rotate">Hello transform!</h1>
+    <h1 id="scale">Hello transform!</h1>
+    <h1 id="skew">Hello transform!</h1>
+    <h1 id="translate">Hello transform!</h1>
 </body>
 
 </html>

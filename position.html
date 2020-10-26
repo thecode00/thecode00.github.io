@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning html</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--모바일로 볼때 환경설정-->
+    <meta name="title" content="이 문서의 제목은 index입니다.">
+    <meta name="description" content="html의 인덱스기능에 대해 공부한페이지입니다.">
+    <meta name="keyword" content="html,coding,코딩">
+    <style>
+        body{
+            padding-bottom: 30px;
+        }
+        #parent, #other{
+            border: 5px solid tomato;
+        }
+        #relative{
+            position: relative;
+            background-color: black;
+            color: aliceblue;
+            top: 5px;
+            left: 5px;
+        }
+        #static{ 
+            position: static;
+            background-color: black;
+            color: aliceblue;
+        }
+        #absolute{
+            position: absolute;
+            background-color: black;
+            color: aliceblue;
+            top: 0;
+            left: 0;
+        }
+        #fixed{
+            position: fixed;
+            background-color: black;
+            color: aliceblue;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+        #large{
+            background-color: burlywood;
+            width: 100%;
+            height: 1000px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2><a href = "index.html">Main page</a></h2>
+    <ul>
+        <li><a href = "1.html">Go to the first page</a></li>
+        <li><a href = "2.html">Go to the second page</a></li>
+        <li><a href="table.html">Go to the table page</a></li>
+        <li><a href="login.html">Go to the login page</a></li>
+        <li><a href="dropdownlist.html">Go to the dropdownlist page</a></li>
+        <li><a href="fileupload.html">Go to the fileupload page</a></li>
+        <li><a href="iframe.html">Go to the iframe page</a></li>
+        <li><a href="input.html">Go to the input page</a></li>
+        <li><a href="cascading.html">Go to the cascading page</a></li>
+        <li><a href="boxmodel.html">Go to the boxmodel page</a></li>
+    </ul>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="relative">relative</div> <!--부모태그가 위치의 기준점-->
+        <div id="static">static</div> <!--엘리먼트들의 포지션 기본값-->
+        <div id="absolute">absolute</div> <!--static이 아닌 부모가 나타나면 그 부모의 위치를 기준으로 위치설정-->
+        <div id="fixed">fixed</div> <!--항상 내가 보고있는곳에 고정된 위치에있다-->
+    </div>
+    <div id="large"></div>
+</body>
+</html>

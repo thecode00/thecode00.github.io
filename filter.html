@@ -5,10 +5,22 @@
     <title>Learning html</title>
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--모바일로 볼때 환경설정-->
-    <meta name="title" content="이 문서의 제목은 input입니다.">
-    <meta name="description" content="html의 인풋기능에 대해 공부한페이지입니다.">
+    <meta name="title" content="이 문서의 제목은 index입니다.">
+    <meta name="description" content="html의 인덱스기능에 대해 공부한페이지입니다.">
     <meta name="keyword" content="html,coding,코딩">
+    <style>
+        img{
+            transition: all 1s;
+
+        }
+        img:hover{
+            -webkit-filter: grayscale(100%) blur(2px);
+            -o-filter: grayscale(100%) blur(2px);
+            filter: grayscale(100%) blur(2px);
+        }
+    </style>
 </head>
+
 <body>
     <h2><a href = "index.html">Main page</a></h2>
     <ul>
@@ -19,22 +31,19 @@
         <li><a href="dropdownlist.html">Go to the dropdownlist page</a></li>
         <li><a href="fileupload.html">Go to the fileupload page</a></li>
         <li><a href="iframe.html">Go to the iframe page</a></li>
+        <li><a href="input.html">Go to the input page</a></li>
         <li><a href="cascading.html">Go to the cascading page</a></li>
         <li><a href="boxmodel.html">Go to the boxmodel page</a></li>
         <li><a href="position.html">Go to the position page</a></li>
+        <li><a href="flex.html">Go to the flex page</a></li>
+        <li><a href="holygraillayout.html">Go to the holygraillayout page</a></li>
+        <li><a href="mediaquery.html">Go to the mediaquery page</a></li>
+        <li><a href="float.html">Go to the float page</a></li>
+        <li><a href="multicolumn.html">Go to the multicolumn page</a></li>
+        <li><a href="filter.html">Go to the filter page</a></li>
     </ul>
-
-    <form>
-        <p><input type="number" name="age" min="10" max="15" placeholder="number"></p>
-        <p><input type="date" name="datev"></p>
-        <p><input type="email" name="emailv" placeholder="email"></p> <!--모바일로 열었을때 클릭하면 자판에 @가 있다-->
-        <p><input type="search" name="searchv" placeholder="search" autofocus></p> <!--모바일로 열었을때 클릭하면 자판에 .com이 있다-->
-        <p><input type="range" name="rangev" min="0" max="10" step="1"></p>
-        <p><input type="hidden" name="hiddenv"></p> <!--서버에 몰래 데이터를 보낼떄 사용-->
-        <p><input type="image" name="imagev" src="image/taxi-cab-381233_1920.jpg" width="100px"></p>
-        <p><input type="submit" value="submit"></p>
-
-    </form>
-
+    <h1>Taxi</h1>
+    <img src="image/taxi-cab-381233_1920.jpg">
 </body>
+
 </html>

@@ -9,18 +9,26 @@
     <meta name="description" content="html의 인덱스기능에 대해 공부한페이지입니다.">
     <meta name="keyword" content="html,coding,코딩">
     <style>
-        #change{
-            transition: all 1s;
+        .blend{
+            font-size: 2rem;
+            font-weight: bold;
+            color: darkorange;
+            border: 5px solid;
+            height: 1000px;
+            background-image: url("image/taxi-cab-381233_1920.jpg");
+            background-color: aliceblue;
+            background-size: cover;
+            background-blend-mode:difference;
+            transition:background-color 1s;
+        }
+        .blend:hover{
+            background-color: coral;
+            transition:all 1s;
         }
     </style>
 </head>
 
 <body>
-    <h1>Site</h1>
-    <ol>
-        <li><a href = "https://www.google.com/" target = "_blank" title = "Go to google">Google</a></li>
-        <li><a href = "https://www.naver.com" target = "_blank" title = "Go to naver">Naver</a></li>
-    </ol>
     <h2><a href = "index.html">Main page</a></h2>
     <ul>
         <li><a href = "1.html">Go to the first page</a></li>
@@ -40,23 +48,12 @@
         <li><a href="float.html">Go to the float page</a></li>
         <li><a href="multicolumn.html">Go to the multicolumn page</a></li>
         <li><a href="filter.html">Go to the filter page</a></li>
-        <li><a href="blender.html">Go to the blender page</a></li>
-        <li><a href="transform.html">Go to the transform page</a></li>
-        <li><a href="javascript.html">Go to the javascript page</a></li>
     </ul>
-    <input type="button" id="change" value="Night" onclick="
-    var target = document.querySelector('body')
-    if(this.value === 'Night'){
-    target.style.backgroundColor = 'gray';
-    target.style.color = 'white';
-    this.value = 'Day'
-    }
-    else{
-    target.style.backgroundColor = 'aliceblue';
-    target.style.color = 'black';
-    this.value = 'Night'
-    }
-    ">
+    <div class="blend">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1> Saepe iure consequuntur praesentium suscipit est modi sed sapiente dolorum, adipisci perspiciatis! Porro iure officiis obcaecati perferendis eos nulla debitis sit atque!
+        Vero dolores eum eligendi maiores laudantium, neque quaerat rerum dolor fugiat numquam similique vitae corrupti excepturi, illum, doloremque sed hic ex optio itaque omnis nulla. Culpa voluptatem aliquam facilis. Sunt.
+        Fugit harum sapiente enim tempora minima illum, aperiam sunt libero itaque, doloribus ipsum veniam ad deleniti ut officiis, voluptatum dolorem pariatur blanditiis vero consequuntur. Similique odio in eligendi sed incidunt.
+    </div>
 </body>
 
 </html>
