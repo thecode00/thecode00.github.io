@@ -36,3 +36,5 @@ b = [1, 2, 3]
 print(a == b) # True
 print(a is b) # False
 '''
+
+list는 입력순서가 유지된다 동적배열로 구현되있다
