@@ -36,7 +36,7 @@ def bubble_sort(arr: List[int]) -> List[int]:
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
-bubble_sort([4, 1, 3, 2, 5])
+print(bubble_sort([4, 1, 3, 2, 5]))
 ```
 
 ## 시간 복잡도
