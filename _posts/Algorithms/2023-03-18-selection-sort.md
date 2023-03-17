@@ -42,4 +42,4 @@ print(selection_sort([4, 1, 2, 3, 5]))
 
 <iframe src="https://giphy.com/embed/xhKdtuT56I3HNUpgOY" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/HBOMax-romance-hbomax-made-for-love-xhKdtuT56I3HNUpgOY">via GIPHY</a></p>
 
-최악의 경우에는 O(N ^ 2), 평균도 O(N ^ 2), 최선의 경우도 O(N ^ 2)인 일관성있는 알고리즘
+최악의 경우도 O(N ^ 2), 평균도 O(N ^ 2), 최선의 경우도 O(N ^ 2)인 일관성있는 알고리즘
