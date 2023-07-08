@@ -32,3 +32,8 @@ UPROPERTY 기능은 언리얼 오브젝트만 사용가능
 ## 객채, 값 유형
 
 바이트: uint8, 정수: int32, 실수: float, 문자열: (FString, FName), 구조체: FVector, FRotator, FTransform
+오브젝트: 데이터와 기능의 집합
+
+## 블루프린트
+
+struct: 일반적으로 작은 오브젝트를 나타냄
