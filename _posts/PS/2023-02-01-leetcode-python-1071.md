@@ -1,12 +1,13 @@
 ---
-title:  "[Leetcode Python] 1071. Greatest Common Divisor of Strings"
-excerpt: "Leetcode python problem solve "
+title: "[Leetcode Python] 1071. Greatest Common Divisor of Strings"
+excerpt: "Solve leetcode problem"
 
 date: 2023-02-01
 last_modified_at: 2023-02-01
 ---
 
 # Problem site address
+
 <a href="https://leetcode.com/problems/greatest-common-divisor-of-strings/description/" target="_blank">1071. Greatest Common Divisor of Strings</a>
 
 ```python
@@ -22,4 +23,3 @@ class Solution:
             return gcd_str
         return ""
 ```
-
