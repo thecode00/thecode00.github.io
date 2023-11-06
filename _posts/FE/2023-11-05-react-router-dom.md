@@ -45,6 +45,8 @@ export default function App() {
 
 이 글에서는 v6.4이후에 달라진 방식을 소개합니다.
 
+### Router 설정
+
 1. 우리가 지원하고자 하는 경로들을 추가
    createBrowserRouter에 각 Route객체들을 담은 배열을 전달합니다.
 
@@ -108,6 +110,22 @@ export default function App() {
   return <RouterProvider router={browserRouter} />;
 }
 ```
+
+### Route 사이의 이동을 담당하는 Link
+
+html에서는 페이지 이동을 위해 "a" 앵커태그를 사용하지만 앵커태그를 클릭하면 서버에 새로운 html페이지를 요청하게 됩니다.
+
+SPA에서는 처음에 모든 javascript, css, html파일들을 불러오는데 서버에 새로운 요청을 보내게되면 다시 모든 파일들을 불러오고 react는 애플리케이션을 재시작합니다.
+
+이런 불필요한 작업을 방지하기위해 react-router-dom에는 "Link"라는 컴포넌트가 존재합니다.
+
+```javascript
+export default function Home() {
+  return <Link to="/">Go to </Link>;
+}
+```
+
+앵커태그는 href 프로퍼티로 경로를 지정하는데요 Link 컴포넌트는 to 프로퍼티로 경로를 지정합니다.
 
 ### 참조
 
