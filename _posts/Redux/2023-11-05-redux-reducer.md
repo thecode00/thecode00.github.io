@@ -2,6 +2,7 @@
 title: "Redux의 reducer함수에 대해 알아보자"
 excerpt: "Redux의 reducer함수에 대해 알아보자"
 
+categories: redux
 toc: true
 toc_sticky: true
 date: 2023-11-05
