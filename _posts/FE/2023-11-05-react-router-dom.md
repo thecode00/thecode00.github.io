@@ -86,7 +86,7 @@ export default function App() {
 
 이러면 Router는 url을 살펴본뒤 현재 활성화된 path가 무엇인지 확인한후 해당 path가 지원되는 path라면 해당 객체의 element에 있는 컴포넌트를 가져옵니다.
 
-### 최종 코드
+최종 코드
 
 ```javascript
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
