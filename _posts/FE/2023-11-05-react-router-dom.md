@@ -1,6 +1,6 @@
 ---
-title: "react-router-dom에 대해 알아보자"
-excerpt: "react-router-dom에 대해 알아보자"
+title: "react-router-dom 기본 사용법에 대해 알아보자"
+excerpt: "react-router-dom 기본 사용법에 대해 알아보자"
 
 categories: react-router-dom
 toc: true
