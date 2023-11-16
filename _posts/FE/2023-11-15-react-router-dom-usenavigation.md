@@ -45,3 +45,17 @@ submitting: "PUT", "POST", "PATCH", "DELETE"같이 form을 제출하는 상태�
 form제출이 없는 "GET"같은 경우에는 idle -> loading -> idle순으로 상태가 변합니다.
 
 form제출이 있는 경우에는 idle -> submitting -> loading -> idle순으로 상태가 변합니다.
+
+### navigation.formData
+
+"PUT", "POST", "PATCH", "DELETE"같이 데이터를 보내는 작업을 하면 첨부되는 데이터가 있을겁니다.
+
+formData 프로퍼티는 그 추가되는 데이터들의 값들입니다.
+
+이 프로퍼티는 사용자 경험을 위해 서버의 응답을 기다리지 않고 바로 UI에 결과를 노출하는 Optimistic UI을 만들때 유용합니다.
+
+특별한 form제출이 없는 "GET"같은 경우에는 formData는 빈 값이 됩니다.
+
+### 출처
+
+https://reactrouter.com/en/main/hooks/use-navigation
