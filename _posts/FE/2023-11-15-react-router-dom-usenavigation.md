@@ -1,5 +1,5 @@
 ---
-title: "react-router-dom의 useNavigation hook"
+title: "react-router-dom 서버와 통신할때 유용한 useNavigation hook"
 excerpt: "react-router-dom의 useNavigation hook에 대해 알아보자"
 
 categories: react-router-dom
@@ -12,8 +12,8 @@ last_modified_at: 2023-11-15
 ### useNavigation hook란?
 
 useNavigation hook는 react-router-dom이 제공하는 hook입니다.  
-흔히 서버와 통신하는 페이지를 만들었을때 데이터를 가져올때까지 기다리는 로딩페이지를 만들때 현재 로딩상태인지 확인하는 별도의 state를 만들었을텐데요  
-useNavigation hook는 그럴필요없이 페이지가 서버와 통신할때 현재 어떤 상태인지를 알려줍니다.
+서버와 통신하는 페이지를 만들면 서버의 응답까지 기다리는 로딩화면이나 아니면 서버의 응답후 특정페이지로 이동 또는 Optimistic UI를 만들때 필요한 데이터들을 제공해주는 편리한 hook입니다.
+useNavigate와 이름은 비슷하지만 다른점은 이 hook는 통신과 관련이 많습니다.
 
 ### 사용법
 
