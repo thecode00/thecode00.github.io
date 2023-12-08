@@ -1,5 +1,5 @@
 ---
-title: "framer-motion의 기본 사용법"
+title: "framer-motion의 사용법 기본편"
 excerpt: "framer-motion의 기본 사용법에 대해 알아보자"
 
 categories: framer-motion
