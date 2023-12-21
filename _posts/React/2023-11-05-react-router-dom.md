@@ -27,7 +27,7 @@ v6.4부터 Router를 사용하는 방식이 달라졌습니다.
 
 v6.4미만 버젼코드:
 
-```javascript
+```jsx
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -50,7 +50,7 @@ export default function App() {
 1. 우리가 지원하고자 하는 경로들을 추가
    createBrowserRouter에 각 Route객체들을 담은 배열을 전달합니다.
 
-```javascript
+```jsx
 const browserRouter = createBrowserRouter([
   {
     path: "/",
@@ -78,7 +78,7 @@ element 프로퍼티는 해당 Route객체가 활성화 되었을때 표시할 �
 2.  Router를 활성화
     `<RouterProvider/>` 컴포넌트를 임포트 해온후 router프로퍼티에 browserRouter를 넣습니다.
 
-```javascript
+```jsx
 export default function App() {
   return <RouterProvider router={browserRouter} />;
 }
@@ -88,7 +88,7 @@ export default function App() {
 
 최종 코드
 
-```javascript
+```jsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const browserRouter = createBrowserRouter([
@@ -119,7 +119,7 @@ SPA에서는 처음에 모든 javascript, css, html파일들을 불러오는데 
 
 이런 불필요한 작업을 방지하기위해 react-router-dom에는 "Link"라는 컴포넌트가 존재합니다.
 
-```javascript
+```jsx
 export default function Home() {
   return <Link to="/">Go to </Link>;
 }
