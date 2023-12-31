@@ -42,4 +42,18 @@ b(); // 3. 함수 b가 실행되면서 함수 b의 컨텍스트가 스택에 쌓
 
 ES5이전버젼까지는 this의 정보를 가지고 있는 this 바인딩이 저 두 요소와 같은레벨에 위치해서 3개의 요소가 있었지만 해당 부분이 Environment Records(ER)이 담당하도록 바뀌면서 실행 컨텍스트는 두 가지 요소를 가지도록 변했습니다.
 
-<!-- TODO: LE, VE, ER서술 -->
+# Lexical Environment(LE), Variable Environment(VE)
+
+Lexical Environment(LE)과 Variable Environment(VE)는 둘다 ER에 있는 정보를 찾을수있는 컴포넌트입니다.
+
+var로 선언된 변수는 VE에 저장되고 나머지 정보들은 다 LE에 저장됩니다.
+
+# Environment Records(ER)
+
+실행 컨텍스트 요소인 LE와 VE는 모두 ER을 가지고 있습니다.
+
+ER은 현재 스코프의 식별자(변수, 함수등등)와 this의 값, 상위 스코프의 ER의 참조를 가지고 있습니다.
+
+ER에는 OuterEnv필드에 자신의 상위 렉시컬 스코프의 ER의 참조를 저장합니다.
+
+이 OuterEnv필드를 통해 상위 스코프의 ER에서 식별자를 찾는 스코프체인이 가능합니다.
