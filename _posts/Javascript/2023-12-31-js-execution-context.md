@@ -34,6 +34,11 @@ console.log(a);
 b(); // 3. 함수 b가 실행되면서 함수 b의 컨텍스트가 스택에 쌓임, 스택의 맨위에 있는 컨텍스트는 함수 b의 컨텍스트이므로 실행 컨텍스트는 함수 b의 컨텍스트로 변경됨
 ```
 
+하지만 컨텍스트가 제거되는 부분에서 예외가 있을수도 있는데요 자세한 부분은 클로저에 대해 알아보시길 바랍니다.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+https://www.w3schools.com/js/js_function_closures.asp
+
 ## 실행 컨텍스트의 생김새
 
 실행 컨텍스트는 크게 Lexical Environment(LE)와 Variable Environment(VE) 이 두 가지 요소로 이루어져있습니다.
