@@ -54,6 +54,14 @@ https://262.ecma-international.org/5.1/#sec-10.3
 
 LE는 lexical nesting structure구조에 따라 변수나 함수에대한 식별자를 저장합니다.
 
+LE는 외부 LE참조와 EnvironmentRecords(ER)로 이루어져있습니다.
+
+LE는 함수선언, With문, try-catch의 catch 마다 새로운 LE가 생성됩니다.
+
+# EnvironmentRecords(ER)
+
+ER에는 LE의 스코프안에 있는 식별자에 대한 정보가 있습니다.
+
 # VariableEnvironment(VE)
 
 실행 컨텍스트가 처음 만들어질때 LE와 VE는 동일한 값을 가지지만 코드가 실행되면 LE의 값은 변경될수있지만 VE는 항상 초기의 값을 가지고 있습니다.
@@ -74,11 +82,11 @@ Lexical Environment(LE)과 Variable Environment(VE)는 둘다 ER에 있는 정�
 
 var로 선언된 변수는 VE에 저장되고 나머지 정보들은 다 LE에 저장됩니다.
 
-# Environment Records(ER)
+# EnvironmentRecords(ER)
 
 실행 컨텍스트 컴포넌트인 LE와 VE는 모두 ER을 가지고 있습니다.
 
-ER은 현재 스코프의 식별자(변수, 함수등등)와 this의 값, 상위 스코프의 ER의 참조를 가지고 있습니다.
+ER은 현재 스코프의 식별자(변수, 함수등등)와 this의 값, 상위 스코프의 ER의 참조등등 여러가지를 가지고 있습니다.
 
 ER에는 OuterEnv필드에 자신의 상위 렉시컬 스코프의 ER의 참조를 저장합니다.
 
