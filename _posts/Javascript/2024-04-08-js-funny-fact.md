@@ -41,3 +41,40 @@ n + ""; // String(n)
 +n; // Number(n)
 n - 0; // Number(n)
 ```
+
+### 점프 문(Statement)와 라벨 문의 조합
+
+자바스크립트의 문(Statement)에는 라벨을 붙일수 있는데요 break와 continue같은 점프문에서 해당 라벨을 사용해서 신기한 기능을 사용할수 있습니다.
+
+# break
+
+break문은 루프나 switch문을 탈출하기 위해 사용하지만 라벨과 함께 사용하면 해당 라벨을 가진 문에서 탈출할수 있게 할수있습니다.
+
+```javascript
+let complete = false;
+iAmALabel: if (true) {
+  for (let idx = 0; idx < 5; idx++) {
+    break iAmALabel;
+  }
+  complete = true;
+}
+console.log(complete); // false, break문이 for루프를 탈출하는게 아닌 라벨이 붙은 if문을 탈출
+```
+
+# continue
+
+### yield
+
+제너레이터 함수에서 쓰는 문으로써 return과 매우 비슷하지만 return은 함수를 종료시키고 제어권을 넘기지만 yield는 제어권을 넘기지 않습니다.
+
+### Object.create(null)
+
+객체를 생성할때 Object.create()함수에 첫번째 인자로 새 객체의 프로토타입이 될 객체를 넘겨줄수있는데 이떄 null을 넘겨주면 아무것도 상속받지않은 기본 메소드조차 없는 새 객체가 만들어집니다.
+
+```js
+let newObj = Object.create(null);
+newObj.toString(); // TypeError, 아무것도 상속받지않은 객체기 때문에 toString 메소드가 존재하지않습니다.
+
+let newObj2 = {};
+newObj2.toString(); // '[object Object]', 객체 리터럴을 사용할경우 Object.prototype에서 상속받음
+```
