@@ -78,3 +78,23 @@ newObj.toString(); // TypeError, 아무것도 상속받지않은 객체기 때�
 let newObj2 = {};
 newObj2.toString(); // '[object Object]', 객체 리터럴을 사용할경우 Object.prototype에서 상속받음
 ```
+
+### 객체의 프로퍼티 이름 목록 배열을 가져오는 법
+
+객체에 있는 프로퍼티들의 배열을 가져오는 법들중에 프로퍼티 이름의 타입이나 열거 가능 속성에 따라 다른 배열을 반환합니다.
+
+# Object.keys()
+
+객체의 자체 프로퍼티중에 이름이 문자열인 프로퍼티의 이름만 배열에 담아 반환합니다.
+
+# Object.getOwnPropertyNames()
+
+객체의 자체 프로퍼티중 이름이 문자열인 프로퍼티의 이름을 배열에 담아 반환합니다. Object.keys()와는 다르게 열거 가능 속성을 무시합니다.
+
+# Object.getOwnPropertySymbols()
+
+객체의 자체 프로퍼티중 이름이 심볼인 프로퍼티의 이름만 배열에 담습니다. 얘도 Object.getOwnPropertyNames()와 마찬가지로 열거 가능 속성을 무시합니다.
+
+# Reflect.ownKeys()
+
+객체의 자체 프로퍼티 이름을 모두 담아 배열에 담습니다.
