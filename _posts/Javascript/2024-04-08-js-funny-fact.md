@@ -98,3 +98,18 @@ newObj2.toString(); // '[object Object]', 객체 리터럴을 사용할경우 Ob
 # Reflect.ownKeys()
 
 객체의 자체 프로퍼티 이름을 모두 담아 배열에 담습니다.
+
+### Map의 key
+
+자바스크립트의 Set나 Map에는 자바스크립트의 모든 값들을 사용가능 합니다. 그런데 Map인스턴스인 자기 자신도 key로 사용가능 합니다.
+
+```js
+let m = new Map();
+
+m.set(m, 1);
+m.get(m); // 1
+
+let f = function () {};
+m.set(f, 2);
+m.get(f);
+```
