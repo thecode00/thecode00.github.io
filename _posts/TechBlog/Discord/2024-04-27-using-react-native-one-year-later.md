@@ -14,11 +14,15 @@ https://discord.com/blog/using-react-native-one-year-later
 
 ### REACT NATIVE 사용 일 년 후
 
-작년 봄에 Discord의 iOS 개발자 면접을 볼때 테크 리드인 Stanislav가 React Native가 미래입니다. 출시되는 즉시 React Native를 사용하여 iOS앱을 처음부터 만들 것입니다.
+작년 봄에 Discord의 iOS 개발자 면접을 볼때 테크 리드인 Stanislav가 제게:
+
+React Native가 미래입니다. 출시되는 즉시 React Native를 사용하여 iOS앱을 처음부터 만들 것입니다.
+
+라고 말했습니다.
 
 As a native iOS developer, I strongly doubted using web technologies to build mobile apps because of my previous experiences with tools like PhoneGap. But after learning and using React Native for a while, I am glad we made that decision.
 
-네이티브 iOS 개발자로서 저는 PhoneGap 같은 툴을 사용한 이전 경험때문에 모바일 앱을 만들때 웹 기술을 이용해서 만드는것에 매우 의혹스러웠습니다. 하지만 React Native를 학습하고 사용한 후에는 그 결정에 매우 만족스러웠습니다.
+네이티브 iOS 개발자로서 저는 PhoneGap 같은 툴을 사용한 이전 경험때문에 모바일 앱을 만들때 웹 기술을 이용해서 만드는것이 매우 의혹스러웠습니다. 하지만 React Native를 학습하고 사용한 후에는 그 결정에 매우 만족스러웠습니다.
 
 # 효율성
 
