@@ -9,7 +9,7 @@ last_modified_at: 2024-04-28
 
 ### 원본
 
-https://discord.com/blog/using-react-native-one-year-later
+원본 페이지: https://discord.com/blog/using-react-native-one-year-later
 
 ### REACT NATIVE 사용 일 년 후
 
@@ -51,9 +51,9 @@ React Native 프로젝트는 격주로 새로운 릴리즈를 출시하며 수�
 
 React Native는 아직 새로운 기술이기 때문에 리소스가 제한적이고 불완전하지만 인기가 높아짐에 따라 다른 성숙한 기술들을 가까운 미래에 따라잡을것입니다. 아래는 저장소 외에 제가 질문을 하거나 최신 정보를 가져올때 쓰는 유용한 채널들입니다.
 
-- #react-native[https://discord.com/invite/0ZcbPKXt5bWVQmld] on Reactiflux.
-- js.coach[https://js.coach/react-native] — React Native의 오픈 소스 컴퍼넌트의 카탈로그.
-- awesome-react-native[https://github.com/jondot/awesome-react-native] — React Native에 대한 기사, 튜토리얼, 예시 리스트.
+- [#react-native][https://discord.com/invite/0ZcbPKXt5bWVQmld] on Reactiflux.
+- [js.coach][https://js.coach/react-native] — React Native의 오픈 소스 컴퍼넌트의 카탈로그.
+- [awesome-react-native][https://github.com/jondot/awesome-react-native] — React Native에 대한 기사, 튜토리얼, 예시 리스트.
 
 React Native는 매우 유망한것으로 보이며 우리 팀의 모바일 앱 개발을 새로운 레벨로 끌어올립니다. 저와 같은 네이티브 iOS개발자로부터 전환은 제가 생각했던거보다 훨씬 쉬웠습니다. 또한 우리의 React로 쓰여진 웹 앱에 매우 쉽게 기여할수있어서 직업에서 한가지 역할만 할수있는것에서 탈출하는데 도움이 됐습니다.
 
