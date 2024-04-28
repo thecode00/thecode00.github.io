@@ -1,11 +1,10 @@
 ---
 title: "[Discord - 테크 블로그 번역] using-react-native-one-year-later "
 
-categories: javascript
 toc: true
 toc_sticky: true
-date: 2024-01-05
-last_modified_at: 2024-01-05
+date: 2024-04-28
+last_modified_at: 2024-04-28
 ---
 
 ### 원본
